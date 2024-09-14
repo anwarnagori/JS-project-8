@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 userDiv.className = 'user';
                 userDiv.innerHTML = `<h2>${user.name}</h2><p>${user.email}</p>`;
                 userSection.appendChild(userDiv);
-                
+
                 const userPosts = posts.filter(post => post.userId === user.id).slice(0, 10);
                 const postsDiv = document.createElement('div');
                 postsDiv.className = 'posts';
